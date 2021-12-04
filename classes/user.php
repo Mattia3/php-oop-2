@@ -2,7 +2,8 @@
 class user {
   private $nome;
   private $cognome;
-
+  public $cart = [];
+  
   function __construct($_user){
     if(array_key_exists("nome", $_user)){
       $this->setNome($_user['nome']);
@@ -27,6 +28,17 @@ class user {
 
   public function getCognome(){
     return $this -> cognome;
+  }
+
+  public function setCart($nuovoValore){
+    $this -> cart = $nuovoValore;
+  }
+
+  public function getCart(){
+    return $this -> cart;
+  }
+  public function pushCart($nuovoValore){
+    $this -> cart[] = $nuovoValore;
   }
  
  

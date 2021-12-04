@@ -1,9 +1,9 @@
 <?php
 require __DIR__ . "/user.php";
-
-class utentePremium extends user  {
+class utentePremium extends user {
   private $sconto;
   private $spedizione;
+ 
 
   function __construct($_premium){
     parent::__construct($_premium);
@@ -31,10 +31,4 @@ class utentePremium extends user  {
     return $this -> spedizione;
   }
  
-
- 
-
-  
- 
-
 }

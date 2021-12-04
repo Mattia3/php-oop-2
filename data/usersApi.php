@@ -3,22 +3,26 @@ $arrayUsers = [
   [
     'nome' => "Maurizio",
     'cognome' => "Pignotti",
+    'cart' => []
   ],
   [
     'nome' => "Nimesh",
     'cognome' => "Fernando",
     'sconto' => 20 . "%",
-    'spedizione' => "gratuita", 
+    'spedizione' => "gratuita",
+    'cart' => [] 
   ],
   [
     'nome' => "Enrico",
     'cognome' => "Saiani",
+    'cart' => []
   ],
   [
     'nome' => "Alessandro",
     'cognome' => "Fedele",
     'sconto' => 20 . "%",
     'spedizione' => "gratuita",
+    'cart' => []
   ]
 ];
 
@@ -36,7 +40,7 @@ $arrayProdotti =[
   [
     'prodotto' => "Computer",
     'prezzo' => 890 . "$",
-    'memoria' => "Lavatrice",
+    'memoria' => 200 . "gb",
     'ram' => 700 . "gb"
   ],
   [
