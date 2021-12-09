@@ -5,9 +5,12 @@ require_once "./classes/informatica.php";
 
 echo "<h2>Utenti</h2>";
 foreach($arrayUsers as $utente){
-   $singoloUtente2 = new utentePremium($utente);
+ 
+  $singoloUtente2 = new utentePremium($utente);
+  if(!strlen($singoloUtente2->getNome()) < 3){
     echo "Nome" . " = " . $singoloUtente2->getNome() .  "<br>";
-    echo "Cognome" . " = " . $singoloUtente2->getCognome() . "<br>";
+  }
+  echo "Cognome" . " = " . $singoloUtente2->getCognome() . "<br>";
   if(array_key_exists('sconto', $utente)){
     echo "Sconto" . " = " . $singoloUtente2->getSconto() . "<br>";
   }
@@ -15,7 +18,6 @@ foreach($arrayUsers as $utente){
     echo "Spedizione" . " = " . $singoloUtente2->getSpedizione() . "<br>";
   }
 
- 
 } 
 
 echo "<h2>Prodotti</h2>";

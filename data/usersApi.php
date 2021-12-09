@@ -6,8 +6,8 @@ $arrayUsers = [
     'cart' => []
   ],
   [
-    'nome' => "Nimesh",
-    'cognome' => "Fernando",
+    'nome' => "Ni",
+    'cognome' => "fernando",
     'sconto' => 20 . "%",
     'spedizione' => "gratuita",
     'cart' => [] 
